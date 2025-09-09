@@ -122,6 +122,8 @@ print_r($arraynumeros);
  * 
  * Crea un array con los 10 primeros numeros pares y multiplicalos por 10, luego imprimelos en el explorador
  * 
+ * Crear un array e ingresar 10 valores aleatorios, luego restar el numero mayor con el numero menor y mostrar en pantalla
+ * 
  * Crear un array y coloca los 10 primeros numeros de fibonacci - Tarea para la casa
  * 
  * 

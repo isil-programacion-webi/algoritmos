@@ -1,4 +1,5 @@
 <?php
+
     $frutas = array("platano","manzana","mandarina");
 
     $frutas2 = ["platano","manzana","mandarina"];
@@ -125,6 +126,5 @@ print_r($arraynumeros);
  * Crear un array e ingresar 10 valores aleatorios, luego restar el numero mayor con el numero menor y mostrar en pantalla
  * 
  * Crear un array y coloca los 10 primeros numeros de fibonacci - Tarea para la casa
- * 
  * 
  */

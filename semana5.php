@@ -65,5 +65,32 @@ $lista->mostrar();
 
 echo '<br/>';
 
+/**
+ * Ejercicio 1: Crear un nodo
+*Instrucciones:
+*- Crea una clase Nodo con dos propiedades: dato y siguiente.
+*- Crea una instancia de Nodo con el valor "PHP Básico".
+*- Imprime el contenido del nodo.
+ */
+
+
+/**
+* Ejercicio 2: Enlazar nodos manualmente
+*Instrucciones:
+*- Crea tres nodos con los valores "Inicio", "Medio" y "Fin".
+*- Enlaza los nodos en orden.
+*- Recorre la lista desde el primero e imprime cada valor.
+ */
+
+
+
+/**
+ *Ejercicio : Insertar al inicio
+*Instrucciones:
+*- Agrega un método insertarAlInicio($dato) a la clase.
+*- Inserta varios elementos al inicio.
+*- Verifica el orden al recorrer la lista
+*/
+
 
 ?>

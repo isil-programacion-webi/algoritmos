@@ -60,7 +60,7 @@ class ListaEnlazada {
 $lista = new ListaEnlazada();
 $lista->insertar("Curso");
 $lista->insertar("de");
-$lista->insertar("PHP");
+$lista->insertar("Algoritmos");
 $lista->mostrar();
 
 echo '<br/>';

@@ -1,20 +1,40 @@
 <?php
-
 echo '<h3>Estructura basica de una lista enlazada</h3>';
-
 class Node {
     public $data;
     public $next;
-
     public function __construct($data) {
         $this->data = $data;
         $this->next = null;
     }
 }
-
 class LinkedList {
     public $head = null;
 
+    public function insert($value) {
+        $newNode = new Node($value);
+        if ($this->head === null) {
+            $this->head = $newNode;
+        } else {
+            $current = $this->head;
+            while ($current->next !== null) {
+                $current = $current->next;
+            }
+            $current->next = $newNode;
+        }
+    }   
+    
+    public function display() {
+        
+        $current = $this->head;
+        while ($current !== null) {
+            echo $current->data . " -> ";
+            $current = $current->next;
+        }
+        echo "NULL\n";
+    }
+
+  
     public function search($value) {
         echo '<h3>Busqueda de un valor en lista</h3>';
         $current = $this->head;
@@ -41,6 +61,7 @@ class LinkedList {
         }
         return false;
     }
+
 
     public function deleteByValue($value) {
 
@@ -84,31 +105,7 @@ class LinkedList {
             }
         }
     }
-
-    public function insert($value) {
-        $newNode = new Node($value);
-        if ($this->head === null) {
-            $this->head = $newNode;
-        } else {
-            $current = $this->head;
-            while ($current->next !== null) {
-                $current = $current->next;
-            }
-            $current->next = $newNode;
-        }
-    }
-
-
-    public function display() {
-        
-        $current = $this->head;
-        while ($current !== null) {
-            echo $current->data . " -> ";
-            $current = $current->next;
-        }
-        echo "NULL\n";
-    }
-
+    
 }
 
 $list = new LinkedList();

@@ -14,6 +14,7 @@ class Nodo {
     }
 }
 
+
 class ListaDoble {
     public $inicio;
     public $fin;
@@ -22,6 +23,7 @@ class ListaDoble {
         $this->inicio = null;
         $this->fin = null;
     }
+
 
     //2. Insertar elementos al final de la lista
     public function insertarFinal($dato) {

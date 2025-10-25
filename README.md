@@ -1,3 +1,5 @@
+####Diagrama de actividad
+
 @startuml
 [*] --> NoRegistrado
 

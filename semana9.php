@@ -29,9 +29,11 @@ $stack->push("A");
 $stack->push("B");
 $stack->push("C");
 
-
+echo "<br/>";
 echo $stack->peek();
-echo $stack->pop(); // Muestra "C"
+echo "<br/>";
+echo $stack->pop();
+echo "<br/>"; // Muestra "C"
 echo $stack->pop(); // Muestra "B"
 
 echo "<br/>";
@@ -45,7 +47,7 @@ function invertirCadena($cadena) {
     }
     return $invertida;
 }
-
+echo "<br/>";
 echo invertirCadena("Hola mundo");
 echo "<br/>";
 
@@ -98,17 +100,14 @@ class Navegador {
             $this->actual = array_pop($this->adelante);
         }
     }
-
     public function actual() {
         return $this->actual;
     }
-
      public function mostrarHistorial() {
         echo "← Atrás: " . implode(", ", $this->atras) . "\n";
         echo "→ Adelante: " . implode(", ", array_reverse($this->adelante)) . "\n";
-        echo "📍 Actual: " . $this->actual . "\n\n";
+        echo " Actual: " . $this->actual . "\n\n";
     }
-
 }
 
 

@@ -1,4 +1,4 @@
-# Capítulo 1: Introducción a Markdown
+# Capítulo 1: Introducción a Algoritmos
  
 Contenido del primer capítulo.
  
